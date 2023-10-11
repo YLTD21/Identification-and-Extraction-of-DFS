@@ -80,15 +80,15 @@ class LengthCurvature:
         river_length = self.calculate_river_length(centerline_image)
 
         plt.imshow(centerline_image, cmap='gray')
-        plt.title('优化后的中心线')
-        print("河流长度：{} 米".format(river_length))
+        plt.title('centerline_imagebatter')
+        print("river_length：{} 米".format(river_length))
 
         # 计算弯曲度
         river_curvature = self.calculate_curvature(centerline_image, river_length)
 
         plt.imshow(centerline_image, cmap='gray')
-        plt.title('优化后的中心线')
-        print("河流弯曲度：{}".format(river_curvature))
+        plt.title('centerline_imagebatter')
+        print("river curvature：{}".format(river_curvature))
         return str(river_length),str(river_curvature)
 if __name__ == "__main__":
     pixel_length = 1.19
