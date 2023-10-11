@@ -211,20 +211,11 @@ class RiverAnalysis:
 
 
 if __name__ == '__main__':
-    # # 反转二值掩膜
-    # mask_image = cv.imread("D:\yjs\\729_806\\227.png", cv.IMREAD_GRAYSCALE)
-    # inverted_mask = cv.bitwise_not(mask_image)
-    #
-    # # 调整阈值
-    # ret, binary = cv.threshold(inverted_mask, 0, 255, cv.THRESH_BINARY)
-    #
-    # river_analysis = RiverAnalysis("D:\yjs\\729_806\\227.png")
-    # print("河流宽度为=", river_analysis.get_river_width())
-    # print(river_analysis.get_river_parameter())
+    
     path = r"D:\yjs\253_red_black.png"
     pixlength = 1.19
     river_analysis = RiverAnalysis(path,pixlength)
-    print("河流宽度为=",river_analysis.get_river_width())
-    print("河流参数为=",river_analysis.get_river_parameter())
+    print("River_width=",river_analysis.get_river_width())
+    print("River_parameter=",river_analysis.get_river_parameter())
     # print(river_analysis.get_river_parameter())
 
