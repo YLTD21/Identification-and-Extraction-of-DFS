@@ -6,7 +6,7 @@
 
 确保你已经安装了以下依赖：
 
-- Python 3.x
+- Python 3.6 
 - NumPy
 - PyTorch
 - OpenCV
